@@ -30,6 +30,7 @@ The backend uses **MongoDB** to store user data, projects, and tasks, and **JWT*
 
 ## 📁 Project Structure
 
+```plaintext
 task-tracker-backend/
 ├── config/
 │   └── db.js              # MongoDB connection setup
@@ -46,6 +47,8 @@ task-tracker-backend/
 ├── .env                   # Environment variables
 ├── server.js              # Main server entry point
 └── package.json           # Project dependencies and scripts
+```
+
 ## Setup Instructions
 
 Follow these steps to get the backend up and running on your local machine:
@@ -53,26 +56,29 @@ Follow these steps to get the backend up and running on your local machine:
 ### 1. Clone the Repository
 First, clone the repository to your local machine by running the following command:
 
-``bash
+```bash
 git clone https://github.com/your-username/Task-Tracker/task-tracker-Backend.git
 cd Task-Tracker/task-tracker-Backend
-
+```
+---
 ### 2. Install Dependencies
 
 Before continuing, make sure you have **Node.js** installed on your machine. Once that's confirmed, navigate to the project directory and install all required dependencies by running:
 
-``bash
+```bash
 npm install
+```
 
 ### 3. Create a `.env` File
 Next, you'll need to create a `.env` file in the root of your project. This file will hold your sensitive environment variables, such as the MongoDB URI and JWT secret.
 
 Once the `.env` file is created, open it in your code editor and add the following environment variables:
 
-``env
+```env
 PORT=5000
 MONGO_URI=mongodb://localhost:27017/tasktracker
 JWT_SECRET=yourSecretKey
+```
 
 ### 4. Start MongoDB
 Before running the server, make sure **MongoDB** is running locally on your machine. 
@@ -80,8 +86,9 @@ Before running the server, make sure **MongoDB** is running locally on your mach
 ### 5. Run the Server
 To start the backend server, run the following command in your terminal:
 
-``bash
+```bash
 npm start
+```
 
 
 # Task Tracker Frontend (React + Tailwind CSS)
@@ -124,20 +131,23 @@ Follow these steps to get the Frontend up and running on your local machine:
 ### 1. Clone the Repository
 First, clone the repository to your local machine by running the following command:
 
-``bash
+```bash
 git clone https://github.com/your-username/Task-Tracker/task-tracker-Frontend.git
 cd Task-Tracker/task-tracker-Frontend
+```
 
 ### 2. Install Dependencies
 
-``bash
+```bash
 npm install
+```
 
 ### 3. Create a `.env` File
 Create a .env file in the root of task-tracker-frontend and add:
 
-``env
+```env
 REACT_APP_API_URL=http://localhost:5000/api
+```
 
 ### 4. Run the frontend locally
 ``bash
